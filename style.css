@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image:-webkit-image-set;
+}
+
+/* Header */
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color:palevioletred;
+  z-index: 100;
+}
+
+/* Left */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 22px;
+}
+
+.logo-text {
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 500 bolder;
+  font-style: italic;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+/* Center nav */
+.header-nav {
+  display: flex;
+  gap: 100px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color:white;
+  font-size: 20px;
+  position: relative;
+  font-style:italic;
+}
+
+.header-nav a:hover {
+  opacity: 0.8;
+}
+
+/* Right icons */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+}
+
+.header-icons a {
+  text-decoration: none;
+  color: red;
+  font-size: 30px;
+  position: relative;
+  border-radius: 20%;
+}
+
+.social-icon {
+  height: 40px;
+  width: auto;
+}
+
+.fa-square-twitter{
+    font-size: 50px;
+}
+
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.hero {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  text-align: center;
+  font-size: xx-large;
+  color: whitesmoke;
+  background-image: url('plant\ image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.service-box {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px black;
+  transition: transform 0.3s;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+.service-box h3 {
+  color: gold;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  color:black;
+  font-size:16px;
+}
+
+.icon-circle{
+  font-size: 40px;
+  
+}
+
+.plant-section h1{
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  font-size: 50px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.Products:hover{
+    transform: translateY(-5px);
+}
+
+.Products img {
+  width: 100%;
+  height: auto;
+  
+}
+
+
+.empty{
+  margin-top: 90px;
+  background-image: url('plant\ image\ background.png');
+  background-size: cover;                 
+  background-repeat: no-repeat;            
+  background-position: cover;
+  padding: 10%;
+}
+
+.empty h4{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-style: italic bold;
+}
+
+.empty h1{
+  color: white;
+  text-align: center;
+  font-style: italic bold;
+  padding-top: 10px;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  margin-top: 50px;
+  padding: 12px 24px;
+  background-color: wheat;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family:inherit bold;
+}
+
+.btn:hover{
+      transform: translateY(-5px);
+
+}
+.empty button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 40px;
+}
+
+.Categories{
+   text-align: center;
+  padding-top: 90px;
+  padding-bottom: 0;
+  font-size: 30px;
+}
+
+
+.Product h3{
+  font-size: 20px;
+  text-align: center;
+}
+
+.Product img{
+  width: 200%;
+  padding-right: 200px;
+  margin: 40px 0;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  gap:  200px;          /* image & text madhi gap */
+  padding-top: 90px;
+  margin: 40px;
+  max-width: 1200px;
+  background-color: bisque;
+  background-size: cover;
+  
+}
+
+
+.about-text h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  gap: 60px;
+}
+
+.stats h3 {
+  font-size: 32px;
+}
+
+
+.Popular{
+  text-align: center;
+  font-size: 30px;
+  padding:30px;
+}
+
+.Popular-box {
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.plant-products:hover{
+    transform: translateY(-5px);
+}
+
+.plant-products  img {
+  width: 100%;
+  height: auto;  
+}
+
+.back-image {
+  width: 100%;
+}
+
+.back-image img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+
+.back-image {
+  margin-top: 90px;
+  background-image: url('Screenshot\ 2026-02-05\ 162447.png');
+  background-size: cover;                 
+  background-repeat: no-repeat;            
+  background-position: cover;
+  padding: 10%
+}
+
+.comments{
+  text-align: right;
+  margin-bottom: 90vh;
+}
